@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#fff"
+    tools:context=".MainActivity">
+    <TextView
+        android:text="Sql"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="email"
+        android:textColor="#fff"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editEmail"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:textColor="#fff"
+        android:ems="10"
+        android:layout_below="@+id/editEmail"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editPassword"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogin"
+        android:layout_below="@+id/editPassword"
+        android:layout_marginTop="20dp"
+        android:text="Log IN "
+        android:textColor="#fff"
+        android:background="#1e90ff"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:fontFamily="sans-serif-condensed"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRegister"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:background="#1e90ff"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-condensed"
+        android:text="sign"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_marginTop="20dp"
+        android:background="#1e90ff"
+        android:text="Update"
+        android:textColor="#fff"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:fontFamily="sans-serif-condensed"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>
